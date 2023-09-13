@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print - _putchar 
+ * main - prints the string "_putchar" from a character array 
  *
  * Return - Always 0 (Success)
  */
@@ -10,15 +10,15 @@ int main(void)
 
 {
 
-	char * = "Binyam"\n"
+	char c[] = "_putchar";
 
-	while (*h)
-        {
-	_putchar(*h);
-	++;
-        }
-	return (0);
-
-
-
+	int i;
+        
+	
+	for (i = 0; i < 9; i++) 
+	{ 
+	    _putchar(c[i]); 
+	 } 
+            _putchar('\n'); 
+            return (0); 
 }
