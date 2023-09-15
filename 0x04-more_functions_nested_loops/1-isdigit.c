@@ -7,7 +7,7 @@
  * Return: 1 for a character that will a digit or 0 for any else
  */
 
-int _insdigit(int x)
+int _isdigit(int x)
 
 {
 
