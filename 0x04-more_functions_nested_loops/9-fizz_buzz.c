@@ -6,7 +6,7 @@
  *
  * Description: prints the number 1 - 100 w/
  * Fizz for multiplies of 3, Buzz for multiples of 5,
- * and FizzBuzz for multiples of both 
+ * and FizzBuzz for multiples of both
  *
  * Return: always 0
  */
