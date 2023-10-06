@@ -41,6 +41,15 @@ int _strlen(char *s)
 }
 
 /**
+ * error - handles errors for main
+ */
+void errors(void)
+{
+	printf("Error\n");
+	exit(98);
+}
+
+/**
  * main - multiples two postive numbers
  * @argc: number of arguments
  * @argv: array of arguments
@@ -54,7 +63,7 @@ int main(int argc, char *argv[])
 
 	s1 = argv[1], s2 = argv[2];
 	if (argc != 3 || !is_digit(s1) || !is_digit(s2))
-		error();
+		errors();
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
 	len = len1 + len2 + 1;
