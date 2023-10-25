@@ -2,7 +2,7 @@
 
 /**
  * free_listp - frees a linked list
- * @head of a list.
+ * @head: head of a list.
  *
  * Return: nothing
  */
@@ -53,12 +53,12 @@ size_t print_listint_safe(const listint_t *head)
 			if (head == add->p)
 			{
 				printf("-> [%p] %d\n", (void *)head, head->n);
-				free_listp (&htpr);
+				free_listp(&htpr);
 				return (nnodes);
 			}
 		}
-		
-		printf("[%p] %d\n", (void *)head->next, head->n);
+
+		printf("[%p] %d\n", (void *)head, head->n);
 		head = head->next;
 		nnodes++;
 	}
