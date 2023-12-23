@@ -1,4 +1,5 @@
 #include "hash_tables.h"
+
 /**
  * hash_table_get - function that retrives a value associated with a key
  *
@@ -9,7 +10,7 @@
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	hash_node_t *nodd;
+	hash_node_t *nodo;
 	unsigned long int index;
 
 	if (key == NULL || ht == NULL)
@@ -21,7 +22,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	for (; nodo != NULL; nodo = nodo->next)
 	{
 		if (strcmp(nodo->key, key) == 0)
-			return (node->value);
+			return (nodo->value);
 	}
 	return (NULL);
 }
